@@ -37,7 +37,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     //   throw new Error("Failed to log in");
     // }
     await new Promise((resolve) => setTimeout(resolve, 500));
-    if (username === "Bob the builder" && password === "123") {
+    if (username === "Bob" && password === "123") {
       localStorage.setItem("user", username);
     }
   }
